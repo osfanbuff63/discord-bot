@@ -1,5 +1,9 @@
 name: Python application
-on: [push, pull_request]
+on:
+# Commented out until needed
+  #push:
+  #pull_request:
+  workflow_dispatch:
 permissions:  # added using https://github.com/step-security/secure-workflows
   contents: read
 jobs:
@@ -35,4 +39,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-        
