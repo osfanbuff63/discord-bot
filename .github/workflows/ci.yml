@@ -1,9 +1,5 @@
 name: Python application
-on:
-# Commented out until needed
-  #push:
-  #pull_request:
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 permissions:  # added using https://github.com/step-security/secure-workflows
   contents: read
 jobs:
@@ -38,4 +34,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest /src/
