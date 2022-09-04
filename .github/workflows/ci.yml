@@ -2,5 +2,5 @@ name: CI
 on: [push, pull_request, workflow_dispatch]
 jobs:
   ci:
-    uses: osfanbuff63/action-workflows/python-matrix-pipenv.yml@v1
+    uses: osfanbuff63/action-workflows/.github/workflows/python-matrix-pipenv.yml@v1
     secrets: inherit
