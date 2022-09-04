@@ -197,6 +197,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+Scripts/
+pyvenv.cfg
 
 # Spyder project settings
 .spyderproject
@@ -229,6 +231,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# The AllContributors CLI uses npm, so ignore node_modules
-# I've intentionally left `package.json` and `package-lock.json` in so that other people can use it if they prefer.
-node_modules/
+secrets.py
